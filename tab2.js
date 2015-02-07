@@ -2,6 +2,9 @@
   // constructor
   var Tab = function(param){
 
+    // option
+    this.param = param
+
     // jQuery object
     this.$root = $(param.root);
     this.$item = this.$root.find(param.item);
@@ -53,10 +56,10 @@
   Tab.prototype.changeBody = function(){
     this.$body
       .removeClass(this.adClass)
-      .hide()
+      .hide(this.param.duration)
     .eq(this.currentIndex)
       .addClass(this.adClass)
-      .show();
+      .show(this.param.duration);
   };
 
   $(function() {
