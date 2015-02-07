@@ -9,10 +9,10 @@
       var target = $(this).attr("href").replace("#", "");
 
       // コンテンツ部分を全部隠す
-      $(".tabBody li").hide('show');
+      $(".tabBody li").hide();
 
       // クリックしたタブのhretと同じIDを持つ箇所だけを表示する
-      $(".tabBody").find('#' + target).show('show');
+      $(".tabBody").find('#' + target).show();
     });
   });
 }(window, jQuery));
