@@ -1,0 +1,63 @@
+@charset: "utf-8";
+
+html,body,ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container {
+  width: 1000px;
+  margin: 40px auto;
+}
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+.row .col3, .row .col9 {
+  float: left;
+  margin-left: 2.52427%;
+}
+.row .col3:first-child, .row .col9:first-child {
+  margin-left: 0;
+}
+.row .col3:nth-child(4n+1) {
+  margin-left: 0;
+}
+.row .col3 { width: 23.1068%; }
+.row .col9 { width: 74.36893%; }
+
+.tabHead {
+  border-bottom: 1px solid #ccc;
+}
+.tabHead:before, .tabHead:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.tabHead:after {
+  clear: both;
+}
+.tabHead li {
+  float: left;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  margin-right: 10px;
+}
+.tabHead li a {
+  display: block;
+  padding: 10px;
+}
+.tabHead li.current a,
+.tabHead li a:hover {
+  background: #fee;
+}
+.tabBody li {
+  border: 1px solid #ccc;
+  border-top: none;
+  margin: 0;
+  padding: 20px 10px;
+}
